@@ -39,19 +39,49 @@
 //         //break;
 // }
 
-let x = 1;
-let bulb;
+// let x = 1;
+// let bulb;
 
-switch (x) {
-  case 0:
-    bulb = "off";
-    console.log(bulb);
-    break;
-  case 1:
-    bulb = "on";
-    console.log(bulb);
-    break;
-  default:
-    bulb = "no value found";
-    console.log(bulb);
+// switch (x) {
+//   case 0:
+//     bulb = "off";
+//     console.log(bulb);
+//     break;
+//   case 1:
+//     bulb = "on";
+//     console.log(bulb);
+//     break;
+//   default:
+//     bulb = "no value found";
+//     console.log(bulb);
+// }
+
+// Loops
+// for loops
+// for (initialExpression; condition; incrementExpression){}
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log("Hello world", i);
+// }
+
+// //nested loops
+// for (let i = 0; i <= 5; i++) {
+//   console.log("--- outer loop---");
+//   for (let j = 1; j <= 5; j++) {
+//     console.log("inner loop");
+//   }
+// }
+
+for (let i = "1"; i <= 1000; i++) {
+  console.log("Ndungu", i);
+}
+
+//while(condition){
+//  code to be executed
+//}
+
+let i = 1;
+while (i <= 5) {
+  console.log("Hello world", i);
+  i++;
 }
