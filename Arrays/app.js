@@ -61,8 +61,67 @@
 // // call the function now.
 // greet();
 
-function sayHello(name) {
-  console.log(`Hello ${name}`);
+// function sayHello(name) {
+//   console.log(`Hello ${name}`);
+// }
+
+// sayHello("John");
+
+// function add(x, y) {
+//   return x + y;
+// }
+
+// const result = add(10, 20);
+// console.log(result);
+
+// function myFunction(x, y) {
+//   return x * y;
+// }
+
+// const solution = myFunction(4, 4);
+// console.log(solution);
+
+//function Declaration  -- not stored in a variable
+// function sayHello(username) {
+//   console.log(`Hello ${username}`);
+// }
+
+// sayHello("Ndungu");
+
+// //Function Expression  --  stored in a variable
+// const greetings = function (user) {
+//   console.log(`Hello ${user}`);
+// };
+// greetings("John");
+
+//  callback Functions -- when we provide functions as an argument to other function. that is known as callback functions
+
+// function showCallFunc(fn) {
+//   const value = 10;
+//   fn(value);
+// }
+// showCallFunc(function (value) {
+//   console.log(value);
+// });
+
+// function greet(name, cb) {
+//   console.log(`Hello ${name}`);
+//   cb();
+// }
+
+// function cb() {
+//   console.log("I am the callback function");
+// }
+
+// greet("John", cb);
+
+function showCallFunc(fn) {
+  const ten = 10;
+  fn(ten);
 }
 
-sayHello("John");
+function fn(ten) {
+  console.log(ten);
+}
+
+showCallFunc(fn);
