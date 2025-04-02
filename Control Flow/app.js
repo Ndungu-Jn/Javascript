@@ -72,16 +72,16 @@
 //   }
 // }
 
-for (let i = "1"; i <= 1000; i++) {
-  console.log("Ndungu", i);
-}
+// for (let i = "1"; i <= 1000; i++) {
+//   console.log("Ndungu", i);
+// }
 
-//while(condition){
-//  code to be executed
-//}
+// //while(condition){
+// //  code to be executed
+// //}
 
-let i = 1;
-while (i <= 5) {
-  console.log("Hello world", i);
-  i++;
-}
+// let i = 1;
+// while (i <= 5) {
+//   console.log("Hello world", i);
+//   i++;
+// }
