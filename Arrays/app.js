@@ -3,23 +3,19 @@
 // let myList = [1, 2, 3, 4, 5];
 // console.log(myList);
 
-const fruits = [
-  "apples",
-  "pomegranate",
-  "mango",
-  "strawberries",
-  "pineapple",
-  "grapefruit",
-];
+const fruits = ["apples", "pomegranate", "mango"];
+const moreFruits = ["strawberries", "pineapple", "grapefruit"];
+const totalFruits = fruits.concat(moreFruits);
 
-fruits.push("banana");
-console.log(fruits);
+console.log(totalFruits);
+// fruits.push("banana");
+// console.log(fruits);
 
-fruits.pop();
-console.log(fruits);
+// fruits.pop();
+// console.log(fruits);
 
-fruits.shift();
-console.log(fruits);
+// fruits.shift();
+// console.log(fruits);
 
-fruits.unshift("orange");
-console.log(fruits);
+// fruits.unshift("orange");
+// console.log(fruits);
