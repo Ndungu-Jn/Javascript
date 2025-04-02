@@ -22,31 +22,47 @@
 
 //Objets -- key value arrangement -- basivally  like dictionariesin python
 
-const person = {
-  //  key     //Value
-  firstName: "Ndungu",
-  lastName: "what",
-  age: 25,
-  location: ["planet", "Earth"],
-  isProgrammer: true,
-};
+// const person = {
+//   //  key     //Value
+//   firstName: "Ndungu",
+//   lastName: "what",
+//   age: 25,
+//   location: ["planet", "Earth"],
+//   isProgrammer: true,
+// };
 
-console.log(person);
-// accessing Items
+// console.log(person);
+// // accessing Items
 
-console.log(person.firstName);
-console.log(person.age);
-console.log(person.location);
-console.log(person.lastName);
+// console.log(person.firstName);
+// console.log(person.age);
+// console.log(person.location);
+// console.log(person.lastName);
 
-const car = {
-  type: "Nissan",
-  model: "prado",
-  color: "indigo",
-};
+// const car = {
+//   type: "Nissan",
+//   model: "prado",
+//   color: "indigo",
+// };
 
-console.log((car.type = "Toyota"));
-console.log(car);
+// console.log((car.type = "Toyota"));
+// console.log(car);
 
-car.wheels = 4;
-console.log(car);
+// car.wheels = 4;
+// console.log(car);
+
+//Functions
+
+//function name(){...arguments.}
+// function greet() {
+//   console.log("Hello from a function");
+// }
+
+// // call the function now.
+// greet();
+
+function sayHello(name) {
+  console.log(`Hello ${name}`);
+}
+
+sayHello("John");
