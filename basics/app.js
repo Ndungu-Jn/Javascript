@@ -12,3 +12,14 @@ console.log(typeof money);
 money = parseInt(money);
 console.log(money);
 console.log(typeof money);
+
+//now lets number to string
+let fifty = 50;
+console.log(fifty);
+console.log(typeof fifty);
+
+//convert
+
+fifty = fifty.toString();
+console.log(fifty);
+console.log(typeof fifty);
