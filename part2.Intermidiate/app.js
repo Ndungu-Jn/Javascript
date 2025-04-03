@@ -28,12 +28,23 @@
 // const double = (number) => number * 2;
 // console.log(double(4));
 
-const getPersionES6 = (name, age, height) => {
-  return {
-    name,
-    age,
-    height,
-  };
-};
+// const getPersionES6 = (name, age, height) => {
+//   return {
+//     name,
+//     age,
+//     height,
+//   };
+// };
 
-console.log(getPersionES6("John", 25, 168));
+// console.log(getPersionES6("John", 25, 168));
+
+// default
+function ratings(rate = 0) {
+  if (rate === 5) {
+    console.log(`high ratings`);
+  } else if (rate === 0) {
+    console.log(`low Rating`);
+  }
+}
+
+ratings();
