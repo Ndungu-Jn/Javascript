@@ -115,13 +115,40 @@
 
 // greet("John", cb);
 
-function showCallFunc(fn) {
-  const ten = 10;
-  fn(ten);
-}
+// function showCallFunc(fn) {
+//   const ten = 10;
+//   fn(ten);
+// }
 
-function fn(ten) {
-  console.log(ten);
-}
+// function fn(ten) {
+//   console.log(ten);
+// }
 
-showCallFunc(fn);
+// showCallFunc(fn);
+
+//Methods
+//basically, it a function inside an object
+
+//Thisis the kienyeji way
+// function greet() {
+//   return `Hello, my name is ${person.name} & I am ${person.age} years old`;
+// }
+
+// const person = {
+//   name: "John",
+//   age: 25,
+//   greet,
+// };
+
+// console.log(person.greet());
+
+// this is the right way.
+const person = {
+  name: "John",
+  age: 30,
+  greet: function () {
+    return `Hello, my name is ${person.name} & I am ${person.age} years old`;
+  },
+};
+
+console.log(person.greet());
