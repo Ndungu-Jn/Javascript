@@ -39,12 +39,22 @@
 // console.log(getPersionES6("John", 25, 168));
 
 // default
-function ratings(rate = 0) {
-  if (rate === 5) {
-    console.log(`high ratings`);
-  } else if (rate === 0) {
-    console.log(`low Rating`);
-  }
+// function ratings(rate = 0) {
+//   if (rate === 5) {
+//     console.log(`high ratings`);
+//   } else if (rate === 0) {
+//     console.log(`low Rating`);
+//   }
+// }
+
+// ratings();
+
+function multiply(a, b = 1) {
+  return a * b;
 }
 
-ratings();
+console.log(multiply(3));
+
+const multiply = (a, b = 1) => a * b;
+
+console.log(multiply(4));
