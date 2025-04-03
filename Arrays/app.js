@@ -170,14 +170,14 @@
 // setInterval
 // Execute a block of code at a specified interval
 
-setInterval(
-  () => console.log(`This function will be executed every 2 seconds`),
-  2000
-);
+// setInterval(
+//   () => console.log(`This function will be executed every 2 seconds`),
+//   2000
+// );
 
-//setTimeout
-//Execute a block of code after a specified delay
+// //setTimeout
+// //Execute a block of code after a specified delay
 
-setTimeout(() => {
-  console.log(`this function will be executed after 3 seconds`);
-}, 3000);
+// setTimeout(() => {
+//   console.log(`this function will be executed after 3 seconds`);
+// }, 3000);
