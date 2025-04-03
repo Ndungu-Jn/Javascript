@@ -157,12 +157,27 @@
 
 // DATES
 
-const date = new Date();
+// const date = new Date();
 
-const year = date.getFullYear();
-const month = date.getMonth();
-const day = date.getDay();
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDay();
 
-console.log(`Year: ${year}`);
-console.log(`Month: ${month}`);
-console.log(`Day: ${day}`);
+// console.log(`Year: ${year}`);
+// console.log(`Month: ${month}`);
+// console.log(`Day: ${day}`);
+
+// setInterval
+// Execute a block of code at a specified interval
+
+setInterval(
+  () => console.log(`This function will be executed every 2 seconds`),
+  2000
+);
+
+//setTimeout
+//Execute a block of code after a specified delay
+
+setTimeout(() => {
+  console.log(`this function will be executed after 3 seconds`);
+}, 3000);
