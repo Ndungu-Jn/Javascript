@@ -15,15 +15,25 @@
 
 // basic way
 
-function greet(username) {
-  return `Hello ${username}`;
-}
-console.log(greet("John"));
+// function greet(username) {
+//   return `Hello ${username}`;
+// }
+// console.log(greet("John"));
 
-// now the arrow function way
-greet = (username) => `Hello ${username}`;
+// // now the arrow function way
+// greet = (username) => `Hello ${username}`;
 
-console.log(greet("John"));
+// console.log(greet("John"));
 
-const double = (number) => number * 2;
-console.log(double(4));
+// const double = (number) => number * 2;
+// console.log(double(4));
+
+const getPersionES6 = (name, age, height) => {
+  return {
+    name,
+    age,
+    height,
+  };
+};
+
+console.log(getPersionES6("John", 25, 168));
