@@ -64,25 +64,76 @@
 // enhances readabilty.
 // we use ... as the spreader.
 
-function giveMe4(a, b, c, d) {
-  console.log("a", a);
-  console.log("b", b);
-  console.log("c", c);
-  console.log("d", d);
+// function giveMe4(a, b, c, d) {
+//   console.log("a", a);
+//   console.log("b", b);
+//   console.log("c", c);
+//   console.log("d", d);
+// }
+
+// const colors = ["red", "green", "blue", "teal"];
+
+// giveMe4(...colors);
+
+// const strNums = ["one", "two", "three"];
+// const moreStrNums = ["four", "five", "six"];
+// const concat = [...strNums, ...moreStrNums];
+
+// console.log(concat);
+
+// const obj1 = { x: 1, y: 2 };
+// const obj2 = { z: 3 };
+// const conc = { ...obj1, ...obj2 };
+
+// console.log(conc);
+
+// let arr = [1, 2, 3];
+// let arr2 = [4, 5];
+// let clonee = [...arr, ...arr2];
+
+// console.log(clonee);
+
+// const user = {
+//   name: "Jen",
+//   age: 22,
+// };
+
+// const clone = { ...user };
+// console.log(clone);
+
+//Rest operator -- allows functions to accept an indefinite number of arguments
+//  uses ... just like the spread function.
+
+// function user(...userData) {
+//   console.log(userData);
+// }
+// user("John", 25, "programmer");
+
+// Destructuring -- allows us to unpack values from data-structure(arrays,objects) into   separate disrinct variables.
+// destructured an array
+const foo = ["one", "two", "three"];
+const [one, two] = foo;
+console.log(one);
+console.log(two);
+
+// Destructured a function
+function f() {
+  return [1, 2];
 }
 
-const colors = ["red", "green", "blue", "teal"];
+let [a, b] = f();
 
-giveMe4(...colors);
+console.log(a);
+console.log(b);
 
-const strNums = ["one", "two", "three"];
-const moreStrNums = ["four", "five", "six"];
-const concat = [...strNums, ...moreStrNums];
+// Assingning the rest of an array to a variable.
+const [m, ...n] = ["one", 2, 4, 5, "this"];
+console.log(n);
 
-console.log(concat);
+const colors = ["red", "green", "blue", "yellow", "orange"];
 
-const obj1 = { x: 1, y: 2 };
-const obj2 = { z: 3 };
-const conc = { ...obj1, ...obj2 };
+let [color1, color2, color3] = colors;
 
-console.log(conc);
+console.log(color1);
+console.log(color2);
+console.log(color3);
