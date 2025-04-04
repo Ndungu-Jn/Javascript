@@ -271,22 +271,64 @@
 
 //THE MAP -- map() --a method that creates a  new array populated with the results of calling a provided  function on every element in the calling array.
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
-let double = numbers.map((num) => num * 2);
-console.log(double);
+// let double = numbers.map((num) => num * 2);
+// console.log(double);
 
-let peoples = [
-  { firstName: "John", lastname: "Ndungu" },
-  { firstName: "Pesh", lastname: "Waceke" },
-  { firstName: "Allan", lastname: "Turin" },
+// let peoples = [
+//   { firstName: "John", lastname: "Ndungu" },
+//   { firstName: "Pesh", lastname: "Waceke" },
+//   { firstName: "Allan", lastname: "Turin" },
+// ];
+
+// const results = peoples.map((person) => {
+//   return [person.firstName, person.lastname];
+// });
+// console.log(results);
+
+// let array1 = [1, 3, 5, 7, 8];
+// const arraydoubled = array1.map((num) => num * 10);
+// console.log(arraydoubled);
+
+//The Filter
+//filter() method allows one  to create a new array containing elements that pass a certain condition. based on a specified criteria
+const songs = [
+  { name: "Bohemian Rhapsody", duration: 5.55 },
+  { name: "Hotel California", duration: 6.3 },
+  { name: "Shape of You", duration: 3.53 },
+  { name: "Blinding Lights", duration: 3.2 },
+  { name: "Someone Like You", duration: 4.45 },
 ];
 
-const results = peoples.map((person) => {
-  return [person.firstName, person.lastname];
-});
-console.log(results);
+console.log(songs);
+console.log(songs.filter((song) => song.duration > 4));
 
-let array1 = [1, 3, 5, 7, 8];
-const arraydoubled = array1.map((num) => num * 10);
-console.log(arraydoubled);
+// example 2
+const computers = [
+  { ram: 4, hdd: 100 },
+  { ram: 8, hdd: 200 },
+  { ram: 16, hdd: 300 },
+  { ram: 32, hdd: 400 },
+];
+
+console.log(computers);
+console.log(computers.filter((comp) => comp.ram <= 16));
+
+// challenge1
+const ages = [32, 33, 16, 40];
+
+const Adults = ages.filter((adult) => adult > 18);
+console.log(Adults);
+
+//
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
+const greater = words.filter((word) => word.length > 6);
+console.log(greater);
