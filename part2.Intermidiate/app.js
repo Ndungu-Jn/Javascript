@@ -211,12 +211,33 @@
 //   console.log(`${index}: ${list[index]}`);
 // }
 //challenge
-const object = {
-  a: 1,
-  b: 2,
-  c: 3,
-};
+// const object = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+// };
 
-for (let objects in object) {
-  console.log(`${objects}: ${object[objects]}`);
+// for (let objects in object) {
+//   console.log(`${objects}: ${object[objects]}`);
+// }
+
+// for...of -- allows one to iterate directly over the values of thr elemnts, rather than dealing with their indices or keys, which makes the code more readable and less error-prone
+
+//for (variable of iterable){...}
+
+let persons = ["Jaba", "mzae", "Mark", "Pesh"];
+
+for (let person of persons) {
+  console.log(person);
+}
+
+const text = "hello you";
+for (const char of text) {
+  console.log(char);
+}
+
+// challenge
+const array1 = ["a", "b", "c"];
+for (const character of array1) {
+  console.log(character);
 }
