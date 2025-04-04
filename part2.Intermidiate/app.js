@@ -225,19 +225,46 @@
 
 //for (variable of iterable){...}
 
-let persons = ["Jaba", "mzae", "Mark", "Pesh"];
+// let persons = ["Jaba", "mzae", "Mark", "Pesh"];
 
-for (let person of persons) {
-  console.log(person);
+// for (let person of persons) {
+//   console.log(person);
+// }
+
+// const text = "hello you";
+// for (const char of text) {
+//   console.log(char);
+// }
+
+// // challenge
+// const array1 = ["a", "b", "c"];
+// for (const character of array1) {
+//   console.log(character);
+// }
+
+ADVANCED ARRAY STUFF!!!!!!!!
+foreach
+When we call the foreach helper we pass in anonymous callback function
+called one time for every elememt in the array
+whatever is inside the function that logic happens
+
+const colors = ["teal", "blue", "red", "green"];
+
+colors.forEach((color) => console.log(color));
+
+// example 2
+const words = ["hello", "birds", "table", "football", "pipe"];
+const capWords = words.forEach((word, index, arr) => {
+  arr[index] = word[0].toUpperCase() + word.substring(1);
+});
+console.log(words);
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+let sum = 0;
+
+function adder(number) {
+  sum += number;
 }
 
-const text = "hello you";
-for (const char of text) {
-  console.log(char);
-}
-
-// challenge
-const array1 = ["a", "b", "c"];
-for (const character of array1) {
-  console.log(character);
-}
+numbers.forEach(adder);
+console.log(sum);
