@@ -242,29 +242,51 @@
 //   console.log(character);
 // }
 
-ADVANCED ARRAY STUFF!!!!!!!!
-foreach
-When we call the foreach helper we pass in anonymous callback function
-called one time for every elememt in the array
-whatever is inside the function that logic happens
+// ADVANCED ARRAY STUFF!!!!!!!!
+// foreach
+// When we call the foreach helper we pass in anonymous callback function
+// called one time for every elememt in the array
+// whatever is inside the function that logic happens
 
-const colors = ["teal", "blue", "red", "green"];
+// const colors = ["teal", "blue", "red", "green"];
 
-colors.forEach((color) => console.log(color));
+// colors.forEach((color) => console.log(color));
 
-// example 2
-const words = ["hello", "birds", "table", "football", "pipe"];
-const capWords = words.forEach((word, index, arr) => {
-  arr[index] = word[0].toUpperCase() + word.substring(1);
+// // example 2
+// const words = ["hello", "birds", "table", "football", "pipe"];
+// const capWords = words.forEach((word, index, arr) => {
+//   arr[index] = word[0].toUpperCase() + word.substring(1);
+// });
+// console.log(words);
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+// let sum = 0;
+
+// function adder(number) {
+//   sum += number;
+// }
+
+// numbers.forEach(adder);
+// console.log(sum);
+
+//THE MAP -- map() --a method that creates a  new array populated with the results of calling a provided  function on every element in the calling array.
+
+let numbers = [1, 2, 3, 4, 5];
+
+let double = numbers.map((num) => num * 2);
+console.log(double);
+
+let peoples = [
+  { firstName: "John", lastname: "Ndungu" },
+  { firstName: "Pesh", lastname: "Waceke" },
+  { firstName: "Allan", lastname: "Turin" },
+];
+
+const results = peoples.map((person) => {
+  return [person.firstName, person.lastname];
 });
-console.log(words);
+console.log(results);
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-let sum = 0;
-
-function adder(number) {
-  sum += number;
-}
-
-numbers.forEach(adder);
-console.log(sum);
+let array1 = [1, 3, 5, 7, 8];
+const arraydoubled = array1.map((num) => num * 10);
+console.log(arraydoubled);
