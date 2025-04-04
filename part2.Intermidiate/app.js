@@ -195,21 +195,21 @@
 
 //for...in  -- way to loop through the keys(propety names of an object)
 // for (let key in <object>){...}
-let person = {
-  name: "Ndungu",
-  age: 25,
-  gender: "male",
-};
+// let person = {
+//   name: "Ndungu",
+//   age: 25,
+//   gender: "male",
+// };
 
-for (let keys in person) {
-  console.log(keys, person[keys]);
-}
+// for (let keys in person) {
+//   console.log(keys, person[keys]);
+// }
 
-let list = ["one", "two", "three", "four"];
+// let list = ["one", "two", "three", "four"];
 
-for (let index in list) {
-  console.log(`${index}: ${list[index]}`);
-}
+// for (let index in list) {
+//   console.log(`${index}: ${list[index]}`);
+// }
 //challenge
 const object = {
   a: 1,
@@ -218,5 +218,5 @@ const object = {
 };
 
 for (let objects in object) {
-  console.log(objects, object[objects]);
+  console.log(`${objects}: ${object[objects]}`);
 }
