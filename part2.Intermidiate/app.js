@@ -167,28 +167,56 @@
 //  condition ? exprIfTrue : expriIfFalse; -- but remember, this does not apply to the if else condition.
 
 // the long way
-let password = 7;
+// let password = 7;
 
-function passwordChecker(ps) {
-  // if (ps === 8) {
-  //   return `Strong password`;
-  // } else {
-  //   return `password should be 8 characters`;
-  // }
-  // shorter way
-  return ps === 8 ? `Strong passord` : `Passwod should be 8 characters`;
+// function passwordChecker(ps) {
+//   // if (ps === 8) {
+//   //   return `Strong password`;
+//   // } else {
+//   //   return `password should be 8 characters`;
+//   // }
+//   // shorter way
+//   return ps === 8 ? `Strong passord` : `Passwod should be 8 characters`;
+// }
+// console.log(passwordChecker(password));
+
+// // Example 2
+// const age = 17;
+
+// const isAdult = age >= 18 ? `Adult` : "Not yet an Adult";
+// console.log(isAdult);
+
+// // challenge
+// let isHavingMoney = false;
+// const haveMoney =
+//   isHavingMoney === true ? "Buy products" : "They should bring money";
+
+// console.log(haveMoney);
+
+//for...in  -- way to loop through the keys(propety names of an object)
+// for (let key in <object>){...}
+let person = {
+  name: "Ndungu",
+  age: 25,
+  gender: "male",
+};
+
+for (let keys in person) {
+  console.log(keys, person[keys]);
 }
-console.log(passwordChecker(password));
 
-// Example 2
-const age = 17;
+let list = ["one", "two", "three", "four"];
 
-const isAdult = age >= 18 ? `Adult` : "Not yet an Adult";
-console.log(isAdult);
+for (let index in list) {
+  console.log(`${index}: ${list[index]}`);
+}
+//challenge
+const object = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
 
-// challenge
-let isHavingMoney = false;
-const haveMoney =
-  isHavingMoney === true ? "Buy products" : "They should bring money";
-
-console.log(haveMoney);
+for (let objects in object) {
+  console.log(objects, object[objects]);
+}
