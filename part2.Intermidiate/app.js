@@ -293,42 +293,59 @@
 
 //The Filter
 //filter() method allows one  to create a new array containing elements that pass a certain condition. based on a specified criteria
-const songs = [
-  { name: "Bohemian Rhapsody", duration: 5.55 },
-  { name: "Hotel California", duration: 6.3 },
-  { name: "Shape of You", duration: 3.53 },
-  { name: "Blinding Lights", duration: 3.2 },
-  { name: "Someone Like You", duration: 4.45 },
-];
+// const songs = [
+//   { name: "Bohemian Rhapsody", duration: 5.55 },
+//   { name: "Hotel California", duration: 6.3 },
+//   { name: "Shape of You", duration: 3.53 },
+//   { name: "Blinding Lights", duration: 3.2 },
+//   { name: "Someone Like You", duration: 4.45 },
+// ];
 
-console.log(songs);
-console.log(songs.filter((song) => song.duration > 4));
+// console.log(songs);
+// console.log(songs.filter((song) => song.duration > 4));
 
-// example 2
-const computers = [
-  { ram: 4, hdd: 100 },
-  { ram: 8, hdd: 200 },
-  { ram: 16, hdd: 300 },
-  { ram: 32, hdd: 400 },
-];
+// // example 2
+// const computers = [
+//   { ram: 4, hdd: 100 },
+//   { ram: 8, hdd: 200 },
+//   { ram: 16, hdd: 300 },
+//   { ram: 32, hdd: 400 },
+// ];
 
-console.log(computers);
-console.log(computers.filter((comp) => comp.ram <= 16));
+// console.log(computers);
+// console.log(computers.filter((comp) => comp.ram <= 16));
 
-// challenge1
-const ages = [32, 33, 16, 40];
+// // challenge1
+// const ages = [32, 33, 16, 40];
 
-const Adults = ages.filter((adult) => adult > 18);
-console.log(Adults);
+// const Adults = ages.filter((adult) => adult > 18);
+// console.log(Adults);
 
-//
-const words = [
-  "spray",
-  "limit",
-  "elite",
-  "exuberant",
-  "destruction",
-  "present",
-];
-const greater = words.filter((word) => word.length > 6);
-console.log(greater);
+// //
+// const words = [
+//   "spray",
+//   "limit",
+//   "elite",
+//   "exuberant",
+//   "destruction",
+//   "present",
+// ];
+// const greater = words.filter((word) => word.length > 6);
+// console.log(greater);
+
+//THE FIND METHOD
+//find() -- find the first element in an array that matches a specific condition
+
+// const peoples = [
+//   { name: "John", age: 19 },
+//   { name: "Mark", age: 22 },
+//   { name: "Allan", age: 15 },
+//   { name: "Betty", age: 17 },
+// ];
+
+// const res = peoples.find((person) => person.name === "Allan");
+// console.log(res);
+
+// const ages = [3, 10, 18, 20];
+// const old = ages.find((age) => age > 18);
+// console.log(old);
