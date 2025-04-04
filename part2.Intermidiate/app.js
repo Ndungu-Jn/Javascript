@@ -111,29 +111,84 @@
 
 // Destructuring -- allows us to unpack values from data-structure(arrays,objects) into   separate disrinct variables.
 // destructured an array
-const foo = ["one", "two", "three"];
-const [one, two] = foo;
-console.log(one);
-console.log(two);
+// const foo = ["one", "two", "three"];
+// const [one, two] = foo;
+// console.log(one);
+// console.log(two);
 
-// Destructured a function
-function f() {
-  return [1, 2];
+// // Destructured a function
+// function f() {
+//   return [1, 2];
+// }
+
+// let [a, b] = f();
+
+// console.log(a);
+// console.log(b);
+
+// // Assingning the rest of an array to a variable.
+// const [m, ...n] = ["one", 2, 4, 5, "this"];
+// console.log(n);
+
+// const colors = ["red", "green", "blue", "yellow", "orange"];
+
+// let [color1, color2, color3] = colors;
+
+// console.log(color1);
+// console.log(color2);
+// console.log(color3);
+
+//in object destructuring  order doesnt matter but the name does matter.
+
+// const student = {
+//   name: "John",
+//   position: "first",
+//   rollno: 25,
+// };
+
+// let { name, position, rollno } = student;
+// console.log(name);
+// console.log(position);
+// console.log(rollno);
+
+// const person = {
+//   name: "John doe",
+//   age: 30,
+//   gender: "male",
+//   country: "Kenya",
+// };
+
+// let { name, age, country } = person;
+// console.log(name);
+// console.log(age);
+// console.log(country);
+
+// ternary operator -- consise way of writing conditional expressionsonly operator that takes 3 operands
+//  condition ? exprIfTrue : expriIfFalse; -- but remember, this does not apply to the if else condition.
+
+// the long way
+let password = 7;
+
+function passwordChecker(ps) {
+  // if (ps === 8) {
+  //   return `Strong password`;
+  // } else {
+  //   return `password should be 8 characters`;
+  // }
+  // shorter way
+  return ps === 8 ? `Strong passord` : `Passwod should be 8 characters`;
 }
+console.log(passwordChecker(password));
 
-let [a, b] = f();
+// Example 2
+const age = 17;
 
-console.log(a);
-console.log(b);
+const isAdult = age >= 18 ? `Adult` : "Not yet an Adult";
+console.log(isAdult);
 
-// Assingning the rest of an array to a variable.
-const [m, ...n] = ["one", 2, 4, 5, "this"];
-console.log(n);
+// challenge
+let isHavingMoney = false;
+const haveMoney =
+  isHavingMoney === true ? "Buy products" : "They should bring money";
 
-const colors = ["red", "green", "blue", "yellow", "orange"];
-
-let [color1, color2, color3] = colors;
-
-console.log(color1);
-console.log(color2);
-console.log(color3);
+console.log(haveMoney);
