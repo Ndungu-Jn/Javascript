@@ -352,19 +352,46 @@
 
 //reducer function -- helps you reduce or combine an array into a single value. It's commonly used with .reduce() method of arrays.
 
-const numbers = [1, 2, 3, 4, 5, 6];
+// const numbers = [1, 2, 3, 4, 5, 6];
 
-const sum = numbers.reduce((p, c) => {
-  console.log(`previous: ${p}`);
-  console.log(`current: ${c}`);
-  return p + c;
-}, 0);
+// const sum = numbers.reduce((p, c) => {
+//   console.log(`previous: ${p}`);
+//   console.log(`current: ${c}`);
+//   return p + c;
+// }, 0);
 
-const pupils = [
-  { name: "Ndungu", age: 25 },
-  { name: "Pesh", age: 19 },
-  { name: "Kababa", age: 28 },
-];
+// const pupils = [
+//   { name: "Ndungu", age: 25 },
+//   { name: "Pesh", age: 19 },
+//   { name: "Kababa", age: 28 },
+// ];
 
-const oldestAge = pupils.reduce((p, c) => (c.age > p ? c.age : p), 0);
-console.log(oldestAge);
+// const oldestAge = pupils.reduce((p, c) => (c.age > p ? c.age : p), 0);
+// console.log(oldestAge);
+
+// map- allows ypu to store key-value pairs where both the keys and  the values can be of any type
+//similar to an object, but with few key differences
+// key word = new map()
+
+const map = new Map();
+
+const keyOne = "Ndungu";
+const keyTwo = {};
+const keyThree = function () {};
+
+map.set(keyOne, "Value of key one");
+map.set(keyTwo, "Value of key two");
+map.set(keyThree, "The value of key three");
+
+console.log(map);
+
+const map1 = new Map();
+
+map1.set("a", 1);
+map1.set("b", 2);
+map1.set("c", 3);
+
+console.log(map1.get("a"));
+console.log(map1.size);
+map1.delete("b");
+console.log(map1.size);
