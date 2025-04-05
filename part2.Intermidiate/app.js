@@ -373,25 +373,62 @@
 //similar to an object, but with few key differences
 // key word = new map()
 
-const map = new Map();
+// const map = new Map();
 
-const keyOne = "Ndungu";
-const keyTwo = {};
-const keyThree = function () {};
+// const keyOne = "Ndungu";
+// const keyTwo = {};
+// const keyThree = function () {};
 
-map.set(keyOne, "Value of key one");
-map.set(keyTwo, "Value of key two");
-map.set(keyThree, "The value of key three");
+// map.set(keyOne, "Value of key one");
+// map.set(keyTwo, "Value of key two");
+// map.set(keyThree, "The value of key three");
 
-console.log(map);
+// console.log(map);
 
-const map1 = new Map();
+// const map1 = new Map();
 
-map1.set("a", 1);
-map1.set("b", 2);
-map1.set("c", 3);
+// map1.set("a", 1);
+// map1.set("b", 2);
+// map1.set("c", 3);
 
-console.log(map1.get("a"));
-console.log(map1.size);
-map1.delete("b");
-console.log(map1.size);
+// console.log(map1.get("a"));
+// console.log(map1.size);
+// map1.delete("b");
+// console.log(map1.size);
+
+//SET -- represents a collection of unique values  - no duplicates. each value can only occur once.
+const arr1 = [1, 2, 4, 3, 2, 2];
+const myset = new Set(arr1); // the numbers in the array will not repeat themselves
+console.log(myset);
+
+//adding things  to the set
+
+const thisSet = new Set();
+thisSet.add("apple");
+thisSet.add("banana");
+thisSet.add("oranges");
+thisSet.add("kiwi");
+
+console.log(thisSet);
+
+//deleting
+thisSet.delete("banana");
+
+console.log(thisSet);
+
+//getting to a variable
+for (let item of thisSet) {
+  console.log(item);
+}
+
+//Challenge
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("c");
+
+console.log(letters);
+
+for (let character of letters) {
+  console.log(character);
+}
