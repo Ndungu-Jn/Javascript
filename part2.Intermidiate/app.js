@@ -349,3 +349,22 @@
 // const ages = [3, 10, 18, 20];
 // const old = ages.find((age) => age > 18);
 // console.log(old);
+
+//reducer function -- helps you reduce or combine an array into a single value. It's commonly used with .reduce() method of arrays.
+
+const numbers = [1, 2, 3, 4, 5, 6];
+
+const sum = numbers.reduce((p, c) => {
+  console.log(`previous: ${p}`);
+  console.log(`current: ${c}`);
+  return p + c;
+}, 0);
+
+const pupils = [
+  { name: "Ndungu", age: 25 },
+  { name: "Pesh", age: 19 },
+  { name: "Kababa", age: 28 },
+];
+
+const oldestAge = pupils.reduce((p, c) => (c.age > p ? c.age : p), 0);
+console.log(oldestAge);
